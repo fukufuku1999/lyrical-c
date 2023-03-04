@@ -237,7 +237,7 @@
 
 			async function run() {
 				const model = new cvstfjs.ClassificationModel();
-				await model.loadModelAsync('/model.json');
+				await model.loadModelAsync('/lyrical-c/model.json');
 				const result = await model.executeAsync(document.getElementById('image_view'));		
 				//document.getElementById('result_view').innerHTML = result[0].map((x, i) => `分類　${i=i+1}　:　 ${parseInt(x=x*100)} ％`).join("<br />");0.00表示
 				//document.getElementById('result_view').innerHTML = result[0].map((x, i) => `分類${i=i+1}の可能性　:　 ${(x=x*100).toFixed(1)} ％`).join("<br />") 100%小数点以下第1位まで
